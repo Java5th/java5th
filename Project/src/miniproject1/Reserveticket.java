@@ -180,7 +180,7 @@ public class Reserveticket implements ReserveMovie{
             fw.write(" ID : " + cpi.getUserID() + "\r\n");
             fw.write(" PW : " + cpi.getUserPW() + "\r\n");
             fw.write(" Reservation Number : " + cpi.getReservationNumber() + "\r\n");
-            fw.write(" Seat : " + (row) + "row" + (col) + "col" + "\r\n");
+            fw.write(" Seat : " + (row) + "행" + (col) + "열" + "\r\n");
             fw.write("=================================================\r\n");
             fw.flush();
             fw.close();
