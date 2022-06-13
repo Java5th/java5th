@@ -1,4 +1,4 @@
-package com.temp;
+package com.project;
 
 public class Tire {
     public int maxRotation;
