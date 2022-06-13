@@ -6,68 +6,79 @@ public class Login implements ReserveMovie{
 	
 
 	@Override
-	public void LogIn() {
-		String id = "sung";
+	public void logIn() {
+		String id []= {"sung", "jang", "jeong"};
 		String password = "1234";
 		Scanner sc = new Scanner(System.in);
+		boolean loginOk = false;
 		
 		while(true) {
+			System.out.println("------------------");
+			System.out.print("ì•„ì´ë””ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” >>");
+			String input_id = sc.nextLine();
 			
-			System.out.print("¾ÆÀÌµğ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä :");
-			String input_id = sc.next();
-			
-			if (id.equals(input_id)){
-				System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä :");
+			for(int i=0; i<id.length; i++) {
+				if (input_id.equals(id[i])){
+					loginOk = true;
+					break;
+				}
+			}
+			if (loginOk) {
+				System.out.println("------------------");
+				System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” >>");
 				
 				while(true) {
 				
-				String input_pass = sc.next();
-				if (input_pass.equals(password)) {
-					
-					System.out.println("·Î±×ÀÎ µÇ¾ú½À´Ï´Ù.");
-					break;
-					
-				}
-				
-				else {
-					System.out.println("ºñ¹Ğ¹øÈ£°¡ Æ²·È½À´Ï´Ù.");
-					System.out.print("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä :");
-					
-				}
-				}
-			 
-			}else {
-				System.out.print("¾ÆÀÌµğ°¡ Æ²·È½À´Ï´Ù.");
+					String input_pass = sc.next();
+					if (input_pass.equals(password)) {
+						
+						System.out.println("ë¡œê·¸ì¸ ë˜ì—ˆìŠµë‹ˆë‹¤.");
+						break;
+						
+					}else {
+						System.out.println("ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.");
+						System.out.print("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” >>");
+						
+			}}}else {
+				System.out.print("ì•„ì´ë””ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.");
 				System.out.println();
-//		
-			}						
+				continue;
+								
+			}
 			break;
 			}
-			
 		}
-				 						
+						
 	
 
 	@Override
-	public void ReserveTicket() {
+	public void reserveTicket() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void CancleTicket() {
+	public void cancleTicket() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void CheckSeat() {
+	public void checkSeat() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void Close() {
+	public void close() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void selectMovie() {
 		// TODO Auto-generated method stub
 		
 	}
