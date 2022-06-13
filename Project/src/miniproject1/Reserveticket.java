@@ -1,11 +1,13 @@
-package com.miniproject1;
+package miniproject1;
 
-public class Reserveticket implements ReserveMovie{
+import com.toyproject.CinemaReserve;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
+
+public class Reserveticket implements ReserveMovie{
     int row, col;
     Scanner scan = new Scanner(System.in);
     String[][] seat = new String[5][5];
@@ -28,7 +30,7 @@ import java.util.concurrent.TimeUnit;
                 scan = new Scanner(System.in);
                 System.out.println("최대 5까지 입력하시길 바랍니다.");
             }
-            if (!(this.row > 5)) {
+            if ((this.row <= 5 && this.row>0)) {
                 break;
             } else {
                 System.out.println("에러: 행과 열은 최대 5까지입니다.");
@@ -43,7 +45,7 @@ import java.util.concurrent.TimeUnit;
                 scan = new Scanner(System.in);
                 System.out.println("최대 5까지 입력하시길 바랍니다.");
             }
-            if (!(this.col > 5)) {
+            if ((this.col <= 5 && this.col>0)) {
                 break;
             } else {
                 System.out.println("에러: 행과 열은 최대 5까지입니다.");
@@ -61,7 +63,6 @@ import java.util.concurrent.TimeUnit;
         }
     }
     public void cinemaSeatQuery() throws InterruptedException, IOException {
-        CinemaReserve rv = new CinemaReserve();
         char row = 'A';
         for(int i=0; i<5; i++){
             System.out.print(row +" Line: ");row++;
@@ -72,13 +73,9 @@ import java.util.concurrent.TimeUnit;
             System.out.print(System.lineSeparator());
         }
         TimeUnit.SECONDS.sleep(2);
-        rv.controller();
-        rv.selectNum();
-        rv.select();
-
     }
-
 }
+
     @Override
     public void Close() {
         // TODO Auto-generated method stub
