@@ -1,4 +1,4 @@
-package day12;
+package exam296;
 
 public class KumhoTire extends Tire{
 	//필드
