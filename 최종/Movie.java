@@ -3,8 +3,8 @@ package miniproject2;
 import java.util.Calendar;
 
 public class Movie {
-	public static final String [] movieList = {"Å¾°Ç-¸Å¹ö¸¯", "¹üÁËµµ½Ã2","ºê·ÎÄ¿"};
-	public static final String [] today = {"ÀÏ¿äÀÏ","¿ù¿äÀÏ","È­¿äÀÏ","¼ö¿äÀÏ","¸ñ¿äÀÏ","±Ý¿äÀÏ","Åä¿äÀÏ"};
+	public static final String [] movieList = {"íƒ‘ê±´-ë§¤ë²„ë¦­", "ë²”ì£„ë„ì‹œ2","ë¸Œë¡œì»¤"};
+	public static final String [] today = {"ì¼ìš”ì¼","ì›”ìš”ì¼","í™”ìš”ì¼","ìˆ˜ìš”ì¼","ëª©ìš”ì¼","ê¸ˆìš”ì¼","í† ìš”ì¼","ì¼ìš”ì¼","ì›”ìš”ì¼","í™”ìš”ì¼"};
 	String time [] = {"10:10" ,"15:20" , "20:40"};
 	
 	Calendar now = Calendar.getInstance();
@@ -16,21 +16,21 @@ public class Movie {
 
 	
 	void selectMenu() {
-		System.out.println("4.*ÀÌÀü ¸Þ´º·Î µ¹¾Æ°¡±â*");
+		System.out.println("4.*ì´ì „ ë©”ë‰´ë¡œ ëŒì•„ê°€ê¸°*");
 		System.out.println("------------------");
-		System.out.print("¹øÈ£ ÀÔ·Â>>");
+		System.out.print("ë²ˆí˜¸ ìž…ë ¥>>");
 		
 	}
 	
 	void selectError() {
 		System.out.println("------------------");
-		System.out.println("¾ø´Â ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
-		System.out.println("¹øÈ£¸¦ ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä.");
+		System.out.println("ì—†ëŠ” ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
+		System.out.println("ë²ˆí˜¸ë¥¼ ë‹¤ì‹œ ìž…ë ¥ í•˜ì„¸ìš”.");
 	}
 	
 	void movieChart() {
 		System.out.println("------------------");
-		System.out.println("<<¹«ºñÂ÷Æ®>>");
+		System.out.println("<<ë¬´ë¹„ì°¨íŠ¸>>");
 		for(int i=0; i<movieList.length;i++) {
 			System.out.println((i+1)+"."+movieList[i]);
 		}
@@ -39,16 +39,16 @@ public class Movie {
 
 	void reservDate() {
 		System.out.println("------------------");
-		System.out.println("<<¿¹¸Å °¡´É ³¯Â¥>>");
+		System.out.println("<<ì˜ˆë§¤ ê°€ëŠ¥ ë‚ ì§œ>>");
 		for(int i=1; i<=3; i++) {
-			System.out.println(i+"."+month+"¿ù "+(day+i)+"ÀÏ "+today[week+i]);
+			System.out.println(i+"."+month+"ì›” "+(day+i)+"ì¼ "+today[week+i]);
 		}
 	}
 	
 
 	void reservTime(String time[]) {
 		System.out.println("------------------");
-		System.out.println("<<»ó¿µ½Ã°£>>");
+		System.out.println("<<ìƒì˜ì‹œê°„>>");
 		for(int i=0; i<3;i++) {
 			System.out.println((i+1)+"."+time[i]);
 		}
