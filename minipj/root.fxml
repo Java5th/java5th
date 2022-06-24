@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minipj.RootController">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="-6.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Button fx:id="btnInsert" layoutX="47.0" layoutY="99.0" mnemonicParsing="false" text="사원정보추가" />
+            <Button fx:id="btnUpdate" layoutX="145.0" layoutY="99.0" mnemonicParsing="false" text="사원정보수정" />
+            <Button fx:id="btnDelete" layoutX="241.0" layoutY="99.0" mnemonicParsing="false" text="사원정보삭제" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="283.0" prefWidth="278.0">
+         <children>
+            <Label alignment="CENTER" layoutX="37.0" layoutY="39.0" text="사원번호" />
+            <TextField fx:id="tfInEmpId" layoutX="104.0" layoutY="35.0" />
+            <Label alignment="CENTER" layoutX="49.0" layoutY="71.0" text="이름" />
+            <TextField fx:id="tfInName" layoutX="104.0" layoutY="67.0" />
+            <Label alignment="CENTER" layoutX="43.0" layoutY="103.0" text="입사일" />
+            <TextField fx:id="tfInHire" layoutX="104.0" layoutY="99.0" />
+            <Label alignment="CENTER" layoutX="49.0" layoutY="135.0" text="직위" />
+            <TextField fx:id="tfInJobId" layoutX="104.0" layoutY="131.0" />
+            <Label alignment="CENTER" layoutX="42.0" layoutY="168.0" text="E-mail" />
+            <TextField fx:id="tfInEmail" layoutX="104.0" layoutY="164.0" />
+            <Button fx:id="btnAdd" layoutX="89.0" layoutY="230.0" mnemonicParsing="false" text="추가" />
+            <Button fx:id="btnCancel" layoutX="149.0" layoutY="230.0" mnemonicParsing="false" text="닫기" />
+            <TextField fx:id="tfInRes" alignment="CENTER" layoutX="38.0" layoutY="196.0" prefHeight="23.0" prefWidth="204.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

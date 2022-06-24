@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="354.0" prefWidth="364.0">
+         <children>
+            <Label layoutX="57.0" layoutY="33.0" text="사번조회" />
+            <Label layoutX="69.0" layoutY="95.0" text="사번" />
+            <Label layoutX="69.0" layoutY="126.0" text="이름" />
+            <Label layoutX="63.0" layoutY="157.0" text="입사일" />
+            <Label layoutX="69.0" layoutY="188.0" text="직위" />
+            <Label layoutX="63.0" layoutY="219.0" text="이메일" />
+            <Button fx:id="btnSear" layoutX="265.0" layoutY="29.0" mnemonicParsing="false" text="검색" />
+            <Button fx:id="btnDel" layoutX="126.0" layoutY="302.0" mnemonicParsing="false" text="삭제" />
+            <Button fx:id="btnCan" layoutX="199.0" layoutY="302.0" mnemonicParsing="false" text="닫기" />
+            <TextField fx:id="tfSearchEmp" layoutX="113.0" layoutY="29.0" />
+            <TextField fx:id="tfSearRes" layoutX="113.0" layoutY="60.0"  />
+            <TextField fx:id="tfSearEmpId" layoutX="113.0" layoutY="91.0"  />
+            <TextField fx:id="tfSearName" layoutX="113.0" layoutY="122.0"  />
+            <TextField fx:id="tfSearHire" layoutX="113.0" layoutY="153.0"  />
+            <TextField fx:id="tfSearJobId" layoutX="113.0" layoutY="184.0"  />
+            <TextField fx:id="tfSearEmail" layoutX="113.0" layoutY="215.0"  />
+            <TextField fx:id="tfDelRes" layoutX="113.0" layoutY="268.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
