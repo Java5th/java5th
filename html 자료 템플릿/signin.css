@@ -1,0 +1,64 @@
+/* 여백 초기화 */
+@font-face {
+    font-family: 'DOHYEON';
+    src: url('fonts/BMDOHYEON_ttf.ttf') format('truetype');
+}
+* {
+    font-family: 'DOHYEON';
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/* 페이지 사이즈 */
+
+div#wrap {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 500px;
+    width: 800px;
+}
+
+#head {
+    margin: 20px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    background: linear-gradient(to bottom right, 
+    #aad9f9, #6dd5fa);
+}
+
+.input-box{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .input-box > input{
+    background:transparent;
+    border:none;
+    border-bottom: solid 1px #ccc;
+    padding:20px 0px 5px 0px;
+    font-size:14pt;
+    margin: 30px auto;
+    width:400px;
+  }
+
+#submit {
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(to bottom right, 
+                #aad9f9, #6dd5fa);
+    height: 100px;
+    margin: 20px 0 0 0;
+}

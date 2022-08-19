@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'DOHYEON';
+    src: url('fonts/BMDOHYEON_ttf.ttf') format('truetype');
+}
+
+
+* {
+    font-family: 'DOHYEON';
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #aad9f9;
+    height: 100px;
+}
+
+h3.con{
+    padding-top: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+
+#wrap {
+    width: 500px;
+    margin : 25px auto;
+}
+
+
+table {
+
+    border-collapse: collapse;
+}
+
+
+tr>th {
+    width: 100px;
+    height: 50px;
+}
+
+
+.article-detail > table th, .article-detail > table td {
+    border:none;
+}
+
+.article-detail > table td, .article-detail > table th:not(:last-child)  {
+    border-bottom:0.5px solid black;
+}
+
+.article-detail > table th {
+    border-right: 0.5px solid black;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #aad9f9;
+    height: 50px;
+}

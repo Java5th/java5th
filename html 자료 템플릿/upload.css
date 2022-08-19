@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'DOHYEON';
+    src: url('fonts/BMDOHYEON_ttf.ttf') format('truetype');
+}
+
+*{
+    font-family: 'DOHYEON';;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#header {
+    background-color: #aad9f9;
+    height: 100px;
+}
+
+h3{
+    padding-top: 25px;
+    font-size: 36px;
+    text-align: center;
+}
+
+#container {
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.input_field {
+    margin: 10px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.pw_field {
+    margin: 10px;
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.textarea_field {
+    width: 500px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.write_button {
+    margin-left: 250px;
+    width: 70px;
+    height: 35px;
+}
+
+footer {
+    margin-top: 30px;
+    background-color: #aad9f9;
+    height: 50px;
+}
+input::placeholder, textarea::placeholder {
+    font-size:18px;
+}
+

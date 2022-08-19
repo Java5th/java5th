@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'DOHYEON';
+    src: url('fonts/BMDOHYEON_ttf.ttf') format('truetype');
+}
+
+*{
+    font-family: 'DOHYEON';
+    margin: 0;
+    padding: 0;
+}
+.claerfix::before, .claerfix::after {display: block; content: ''; clear: both;}
+
+/* 레이아웃 */
+
+#wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+
+
+#menu {
+    margin: 30px;
+    text-align: center;
+    font-size: 36px;
+   
+}
+
+table {
+    font-size: 22px;
+    margin: 0 auto;
+    width: 800px;
+    border-collapse: collapse;
+    border: none;
+}
+
+table > td {
+    border :none;
+}
+
+.article-list table {
+    border:none;   
+    border-top:2px solid lightgray;
+    border-bottom:2px solid lightgray;
+}
+
+.table-common>table {
+	width: 1000px;
+	border-collapse: collapse;
+}
+
+.table-common .btn-box {
+	text-align:center;
+}
+
+.article-list > table th, .article-list > table td {
+    border:none;
+    text-align: center;
+    height: 50px;
+}
+
+.article-list > table td {
+    border-bottom:1px solid lightgray;
+}
+
+.article-list > table thead {
+    border-bottom:2px solid lightgray;
+    background-color:#F5F5F5;
+}
+
+.article-list > table td {
+    border-bottom:1px solid lightgray;
+}
+
+.article-list > table thead {
+    border-bottom:2px solid lightgray;
+    background-color:#F5F5F5;
+}
+
+#write {
+   float: right;
+   margin-top: 20px;
+   margin-right: 500px;
+   width: 100px;
+   height: 50px;
+}
+
+#write::value {
+    
+}
